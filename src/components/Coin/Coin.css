@@ -1,0 +1,148 @@
+.coin-container .wrapper {
+  max-width: 740px;
+  margin: 1rem auto;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #26272b;
+  box-shadow: 0px 0px 12px #18191b;
+  border-radius: 8px;
+}
+.wrapper-name {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  max-width: 740px;
+  margin: 1rem auto;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #26272b;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px #a972cb;
+}
+.rank {
+  margin: 0.5 0;
+  font-family: "Nunito", sans-serif;
+}
+.rank span {
+  border: 1px solid #a972cb;
+  box-shadow: 0px 0px 8px #a972cb;
+  background-color: #a972cb;
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info .coin-heading {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.info .coin-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info p {
+  padding: 5px;
+  font-weight: bold;
+}
+.back {
+  margin: 10px 20px;
+  cursor: pointer;
+  width: 55px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: transparent;
+  border-color: #a972cb;
+}
+.back:hover {
+  background-color: #a972cb;
+  border: none;
+}
+table {
+  margin: 0.5rem 0;
+}
+td,
+th {
+  padding: 8px;
+  text-align: center;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+.stats .row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a972cb;
+  margin: 0.6rem 0;
+  padding-bottom: 0.5rem;
+}
+.stats span {
+  text-align: center;
+  margin-left: 4px;
+  color: green;
+}
+.about {
+  font-family: "Space Mono", monospace;
+}
+.about h2 {
+  text-align: center;
+}
+.wrapper th {
+  background-color: #a972cb;
+  box-shadow: 0px 0px 8px #a972cb;
+}
+@media (max-width: 770px) {
+  .coin-container .wrapper {
+    max-width: 540px;
+    font-size: 13px;
+  }
+  .wrapper-name {
+    max-width: 540px;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .coin-container .wrapper {
+    max-width: 340px;
+    font-size: 10px;
+  }
+  .wrapper-name {
+    max-width: 340px;
+  }
+  .thirty-days {
+    display: none;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h4 {
+    font-size: 8px;
+  }
+}
+@media (max-width: 350px) {
+  .stats {
+    max-width: 180px;
+  }
+  .coin-container .wrapper {
+    max-width: 200px;
+    font-size: 8px;
+  }
+  .wrapper-name {
+    max-width: 200px;
+  }
+  .fourteen-days {
+    display: none;
+  }
+  .info {
+    flex-direction: column;
+  }
+}

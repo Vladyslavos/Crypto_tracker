@@ -1,0 +1,199 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #26272b;
+  color: black;
+  height: 90px;
+  text-decoration: none;
+}
+.search-box {
+  width: 200px;
+  height: 40px;
+}
+.container-2 {
+  width: 200px;
+  white-space: nowrap;
+  position: relative;
+}
+.container-2 input#search {
+  width: 50px;
+  height: 50px;
+  background: #202020;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 40px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #a972cb;
+  -webkit-transition: width 0.55s ease;
+  -moz-transition: width 0.55s ease;
+  -ms-transition: width 0.55s ease;
+  -o-transition: width 0.55s ease;
+  transition: width 0.55s ease;
+}
+.container-2 .icon {
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 13px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.container-2:hover input#search {
+  width: 200px;
+}
+.container-2:hover .icon {
+  color: #93a2ad;
+}
+.api-attribution {
+  font-family: "Space Mono", monospace;
+}
+.api-attribution p {
+  color: #c2efb3;
+}
+.api-attribution a {
+  color: #dbff43;
+  padding-left: 6px;
+}
+.api-attribution a:hover {
+  color: #a972cb;
+}
+.icon-coins {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.indiv-img {
+  max-width: 30px;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+.indiv-img:nth-child(1) {
+  animation-name: icon-float-1;
+  animation-duration: 4s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+.indiv-img:nth-child(2) {
+  animation-name: icon-float-2;
+  animation-duration: 2.5s;
+  animation-delay: 0.3s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.indiv-img:nth-child(3) {
+  left: 20%;
+  top: 35%;
+  animation-name: icon-float-3;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+}
+.indiv-img:nth-child(4) {
+  right: 2%;
+  top: 42%;
+  animation-name: icon-float-4;
+  animation-duration: 3.5s;
+  animation-delay: 0.34s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.indiv-img:nth-child(5) {
+  right: 20%;
+  top: 40%;
+  animation-name: icon-float-5;
+  animation-duration: 4s;
+  animation-delay: 0.1s;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes icon-float-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: scale(1.05) translateY(50%);
+  }
+  100% {
+    transform: scale(1) translateY(0%);
+  }
+}
+@keyframes icon-float-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes icon-float-3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(60%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes icon-float-4 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(60%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes icon-float-5 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-70%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 765px) {
+  .api-attribution p {
+    font-size: 10px;
+  }
+  .icon-coins {
+    width: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .api-attribution p {
+    font-size: 8px;
+  }
+  .icon-coins {
+    width: 120px;
+  }
+}
+@media (max-width: 440px) {
+  .navbar {
+    justify-content: space-evenly;
+    height: 70px;
+  }
+  .hide-attribution {
+    display: none;
+  }
+}
+@media (max-width: 370px) {
+  .icon-coins {
+    display: none;
+  }
+}
