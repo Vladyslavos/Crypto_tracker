@@ -2,7 +2,8 @@
 <p><b>Description: </b>In this project, I made a crypto tracker, where the user can receive information about the cryptocurrency in real time and read in detail about each click on it, the user can also find a coin by entering it into the search. The data comes through the API from the CoinGeco service.</p> 
 <a href = "https://vladyslavos.github.io/Crypto_tracker/">LIVE</a>
 
-![Crypto tracker - Google Chrome 2022-12-24 13-17-34 (online-video-cutter com) (1) (1)](https://user-images.githubusercontent.com/67589338/209433766-760a5611-b82d-477d-9c4d-6ce694d1649b.gif)
+![Crypto tracker - Google Chrome 2022-12-24 13-17-34 (online-video-cutter com) (1) (3)](https://user-images.githubusercontent.com/67589338/209433819-e60c85e6-06cb-4d79-937f-0d4c54d39f61.gif)
+
 
 
 
